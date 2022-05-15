@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   return (    
-    <h1 style="color: #228888">We are ready to go!</h1>
+    <h1><i>We are ready to go!</i></h1>
   );
 }
 
