@@ -1,9 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (    
-    <h1><i>We are ready to go!</i></h1>
+    <h1><i>This application is implemented in ReactJs and run into Google AppEngine</i></h1>
   );
 }
 
