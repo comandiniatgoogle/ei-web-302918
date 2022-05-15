@@ -19,7 +19,7 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <h1 style="color: #228888">The bash script works!</h1>
+    <h1>The bash script works!</h1>
   );
 }
 
