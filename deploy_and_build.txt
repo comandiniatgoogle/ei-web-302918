@@ -1,4 +1,3 @@
-cd ..
 rm -r ei-web-302918
 git clone https://github.com/comandiniatgoogle/ei-web-302918.git
 cd ei-web-302918
