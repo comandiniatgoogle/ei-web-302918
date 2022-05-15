@@ -1,0 +1,23 @@
+image: google/cloud-sdk:alpine
+
+stages:
+- build
+- deploy
+
+build-assets:
+  stage: build
+  needs: []
+  script: echo "build-assets"
+
+build-locales:
+  stage: build
+  needs: []
+  script: echo "build-locales"
+
+app-engine:
+  stage: deploy
+  envirenment:
+    name: production
+    url: https://ei-web-302918.nw.r.appspot.com
+  script:
+    - gcloud app deploy app.yaml
