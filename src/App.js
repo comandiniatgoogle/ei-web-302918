@@ -19,7 +19,7 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <h1>I am able to publish updates</h1>
+    <h1>I am able to publish updates.</h1>
   );
 }
 
