@@ -1,14 +1,14 @@
 import './EiWebUserLogo.css';
 
-const EiWebUserLogo = () => {
+const EiWebUserLogo = (props) => {
   return (
     <div align='center'>
       <img
-        src='https://moma-teams-photos.corp.google.com/photos/comandini?sz=100&type=SECURITY&type=SILHOUETTE'
-        alt='comandini'
+        src={ `https://moma-teams-photos.corp.google.com/photos/${ props.userConnected.ldap }?sz=100&type=SECURITY&type=SILHOUETTE` }
+        alt={ props.userConnected.ldap }
       />
       <br />
-      <span className="eiweb-userlogo-ldap">comandini</span>
+      <span className="eiweb-userlogo-ldap">{ props.userConnected.name }</span>
     </div>
   );
 };

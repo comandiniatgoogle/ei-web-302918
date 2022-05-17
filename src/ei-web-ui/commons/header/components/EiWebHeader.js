@@ -3,7 +3,7 @@ import EiWebGoogleLogo from "./EiWebGoogleLogo";
 import "./EiWebHeader.css";
 import EiWebUserLogo from "./EiWebUserLogo";
 
-const EiWebHeader = () => {
+const EiWebHeader = (props) => {
   return (
     <table className="eiweb-header">
       <tr>
@@ -14,8 +14,13 @@ const EiWebHeader = () => {
           <EiWebApplicationTitle />
         </td>
         <td width="10%">
-          <EiWebUserLogo />
+          <EiWebUserLogo userConnected={ props.userConnected }/>
         </td>
+      </tr>
+      <tr>
+          <td colspan='3'>
+              <hr color="#228888" />
+          </td>
       </tr>
     </table>
   );
