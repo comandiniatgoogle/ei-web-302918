@@ -1,10 +1,10 @@
 import './App.css';
-import AppHeader from './commons/AppHeader';
+import EiWebHeader from './ei-web-ui/commons/header/components/EiWebHeader';
 
 function App() {
   return ( 
     <div>
-      <AppHeader />     
+      <EiWebHeader />
     </div>
   );
 }
