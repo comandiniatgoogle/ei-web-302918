@@ -1,6 +1,6 @@
 import './App.css';
-import EiWebContainer from './ei-web-ui/commons/header/components/EiWebContainer';
 import EiWebHeader from './ei-web-ui/commons/header/components/EiWebHeader';
+import EiWebAppHome from './ei-web-ui/commons/header/components/homepage/EiWebAppHome';
 
 function App() {
 
@@ -16,7 +16,7 @@ function App() {
   return ( 
     <div>
       <EiWebHeader userConnected={ userConnected }/>
-      <EiWebContainer userConnected={ userConnected } />
+      <EiWebAppHome userConnected={ userConnected }/>
     </div>
   );
 }
