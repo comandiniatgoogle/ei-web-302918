@@ -1,4 +1,5 @@
 import './App.css';
+import EiWebContainer from './ei-web-ui/commons/header/components/EiWebContainer';
 import EiWebHeader from './ei-web-ui/commons/header/components/EiWebHeader';
 
 function App() {
@@ -10,25 +11,12 @@ function App() {
     fullName: 'Daniele Comandini'
   };
 
-  const smoroz = {
-    ldap: 'smoroz',
-    name: 'Sergey',
-    cognome: 'Smoroz',
-    fullName: 'Sergey Moroz'
-  };
-
-  const fpetroni = {
-    ldap: 'fpetroni',
-    name: 'Francesco',
-    cognome: 'Petroni',
-    fullName: 'Francesco Petroni'
-  };
-
-  const userConnected = fpetroni;
+  const userConnected = comandini;
 
   return ( 
     <div>
       <EiWebHeader userConnected={ userConnected }/>
+      <EiWebContainer userConnected={ userConnected } />
     </div>
   );
 }
