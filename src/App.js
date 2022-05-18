@@ -24,7 +24,7 @@ function App() {
     fullName: 'Francesco Petroni'
   };
 
-  const userConnected = comandini;
+  const userConnected = fpetroni;
 
   return ( 
     <div>
