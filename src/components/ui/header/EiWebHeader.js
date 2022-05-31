@@ -1,11 +1,25 @@
 import React from "react";
-import { AppBar, Toolbar, Typography } from "@material-ui/core";
+import { AppBar, Toolbar } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
+
+import EiWebUserConnected from "./EiWebUserConnected";
+import EiWebAppTitle from "./EiWebAppTitle";
+import EiWebAppLeftMainMenu from "./EiWebAppLeftMainMenu";
 
 const useStyles = makeStyles((theme) => ({
   toolbarMargin: {
     ...theme.mixins.toolbar,
   },
+  avatar: {
+    marginLeft: "auto",
+    marginRight: "100px",
+    width: 55,
+    height: 55,
+  },
+  hamburgerMenu: {
+      color: 'white',
+      fontWeight: 700
+  }
 }));
 
 const EiWebHeader = () => {
@@ -14,7 +28,9 @@ const EiWebHeader = () => {
     <React.Fragment>
       <AppBar>
         <Toolbar>
-          <Typography variant="h6">EI WEB CONSOLE</Typography>
+          <EiWebAppLeftMainMenu classes={classes}/>
+          <EiWebAppTitle />
+          <EiWebUserConnected classes={classes} />
         </Toolbar>
       </AppBar>
       <div className={classes.toolbarMargin} />
