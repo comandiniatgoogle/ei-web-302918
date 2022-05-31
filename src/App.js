@@ -1,23 +1,15 @@
+import { MuiThemeProvider } from '@material-ui/core';
 import './App.css';
-import EiWebHeader from './ei-web-ui/commons/header/components/EiWebHeader';
-import EiWebAppHome from './ei-web-ui/commons/header/components/homepage/EiWebAppHome';
+import EiWebHeader from './components/ui/header/EiWebHeader';
 
-function App() {
+import defaultTheme from './components/ui/styles/EiWebDefaultTheme'
 
-  const comandini = {
-    ldap: 'comandini',
-    name: 'Daniele',
-    cognome: 'Comandini',
-    fullName: 'Daniele Comandini'
-  };
-
-  const userConnected = comandini;
-
+const App = () => {
   return ( 
-    <div>
-      <EiWebHeader userConnected={ userConnected }/>
-      <EiWebAppHome userConnected={ userConnected }/>
-    </div>
+    <MuiThemeProvider theme={ defaultTheme }>
+      <EiWebHeader></EiWebHeader>
+      HELLO
+    </MuiThemeProvider>
   );
 }
 
