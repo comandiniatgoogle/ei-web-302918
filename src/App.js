@@ -21,7 +21,7 @@ const App = () => {
 
   const getDataFromBQ = () => {
     console.log("Connection to BQ...");
-    fetch(bigQuery)
+    fetch(bigQuery, options)
       .then((response) => {
         // response.json();
         console.log( response.json() )
