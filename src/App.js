@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { MuiThemeProvider } from "@material-ui/core";
 import "./App.css";
 import EiWebHeader from "./components/ui/header/EiWebHeader";
+import BigQueryTest from './BigQueryTest';
 
 import defaultTheme from "./components/ui/styles/EiWebDefaultTheme";
 
@@ -35,8 +36,11 @@ const App = () => {
   return (
     <MuiThemeProvider theme={defaultTheme}>
       <EiWebHeader></EiWebHeader>
-      <React.Fragment>
+      {/* <React.Fragment>
         <button onClick={getDataFromBQ}>CONNECT TO BQ</button>
+      </React.Fragment> */}
+      <React.Fragment>
+        <BigQueryTest></BigQueryTest>
       </React.Fragment>
     </MuiThemeProvider>
   );
